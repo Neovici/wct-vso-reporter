@@ -5,7 +5,7 @@ module.exports = function (wct, pluginOptions) {
     console.log(
       '##vso[task.logissue type=error;sourcepath='
       + test.test[0]
-      + ']Test '
+      + ';]Test '
       + test.test.join(' » ')
       + ' failed')
   }.bind(this));
