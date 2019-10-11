@@ -14,6 +14,7 @@
     "wct",
     "azure"
   ],
+  "wct-plugin": {},
   "author": "Cristian Necula <virusz@gmail.com>",
   "license": "MIT",
   "bugs": {
