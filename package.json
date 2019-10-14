@@ -1,27 +1,56 @@
 {
-  "name": "wct-vso-reporter",
-  "version": "1.0.2",
-  "description": "A wct reporter that outputs Azure pipelines logging commands",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Neovici/wct-vso-reporter.git"
-  },
-  "keywords": [
-    "wct",
-    "azure"
+ "name": "wct-vso-reporter",
+ "version": "1.0.2",
+ "description": "A wct reporter that outputs Azure pipelines logging commands",
+ "main": "index.js",
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/Neovici/wct-vso-reporter.git"
+ },
+ "keywords": [
+  "wct",
+  "azure"
+ ],
+ "wct-plugin": {},
+ "author": "Cristian Necula <virusz@gmail.com>",
+ "license": "MIT",
+ "bugs": {
+  "url": "https://github.com/Neovici/wct-vso-reporter/issues"
+ },
+ "homepage": "https://github.com/Neovici/wct-vso-reporter#readme",
+ "release": {
+  "plugins": [
+   "@semantic-release/commit-analyzer",
+   "@semantic-release/release-notes-generator",
+   "@semantic-release/changelog",
+   "@semantic-release/github",
+   "@semantic-release/npm",
+   "@semantic-release/git"
   ],
-  "wct-plugin": {},
-  "author": "Cristian Necula <virusz@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Neovici/wct-vso-reporter/issues"
-  },
-  "homepage": "https://github.com/Neovici/wct-vso-reporter#readme",
-  "dependencies": {
-    "azure-pipelines-task-lib": "^2.9.3"
+  "branch": "master"
+ },
+ "commitlint": {
+  "extends": [
+   "@commitlint/config-conventional"
+  ]
+ },
+ "husky": {
+  "hooks": {
+   "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
   }
+ },
+ "dependencies": {
+  "azure-pipelines-task-lib": "^2.9.3"
+ },
+ "devDependencies": {
+  "@commitlint/cli": "^8.2.0",
+  "@commitlint/config-conventional": "^8.2.0",
+  "@semantic-release/changelog": "^3.0.4",
+  "@semantic-release/git": "^7.0.16",
+  "husky": "^3.0.9",
+  "semantic-release": "^16.0.0-beta.25"
+ }
 }
