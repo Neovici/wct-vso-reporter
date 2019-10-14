@@ -21,4 +21,7 @@
     "url": "https://github.com/Neovici/wct-vso-reporter/issues"
   },
   "homepage": "https://github.com/Neovici/wct-vso-reporter#readme",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^2.9.3"
+  }
 }
