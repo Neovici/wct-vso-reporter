@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cristinecula/wct-vso-reporter.git"
+    "url": "git+https://github.com/Neovici/wct-vso-reporter.git"
   },
   "keywords": [
     "wct",
@@ -18,7 +18,7 @@
   "author": "Cristian Necula <virusz@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cristinecula/wct-vso-reporter/issues"
+    "url": "https://github.com/Neovici/wct-vso-reporter/issues"
   },
-  "homepage": "https://github.com/cristinecula/wct-vso-reporter#readme"
+  "homepage": "https://github.com/Neovici/wct-vso-reporter#readme",
 }
