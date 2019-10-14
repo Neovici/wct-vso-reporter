@@ -1,5 +1,5 @@
 {
- "name": "wct-vso-reporter",
+ "name": "@neovici/wct-vso-reporter",
  "version": "1.0.3",
  "description": "A wct reporter that outputs Azure pipelines logging commands",
  "main": "index.js",
@@ -31,6 +31,9 @@
    "@semantic-release/git"
   ],
   "branch": "master"
+ },
+ "publishConfig": {
+  "access": "public"
  },
  "commitlint": {
   "extends": [
