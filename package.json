@@ -1,6 +1,6 @@
 {
   "name": "wct-vso-reporter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A wct reporter that outputs Azure pipelines logging commands",
   "main": "index.js",
   "scripts": {
